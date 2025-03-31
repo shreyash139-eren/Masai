@@ -15,11 +15,11 @@ const imageData = [
     
     for(let i=0;i<imageData.length;i++){
             if(imageData[i].value>0 && imageData[i].value<=150){
-              black+=imageData[i].value
+              black++
             }
             else if(imageData[i].value>150){
-                black+=150
-                white+=imageData[i].value-150
+                black++
+                white++
             }
     }
     sum=(black*1)+(white*0.5)
