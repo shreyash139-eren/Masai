@@ -5,4 +5,3 @@ const [{name:firstname, address:{city:firstCity, street:{name: str1}}},{name:sec
 let final=[`${firstname} lives in ${firstCity} on ${str1}`,`${secondName} lives in ${secondCity} on ${str2}`]
 
 console.log(final)
-
