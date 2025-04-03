@@ -11,6 +11,9 @@ const library = {
     return;
     
     }
+    else if(library.books.title===book.title){
+        cconsole.log("Book already in library.")
+    }
     
     this.books.push(book);
     
@@ -36,6 +39,6 @@ const library = {
     
     } } };
     
-    library.addBook({ author: "George Orwell", year: 1949 });
+    library.addBook({ title: "The Hobbit", author: "J.R.R. Tolkien", year: 1937 });
     
-    console.log(library.books.length);
+    console.log( findBookByTitle("The Hobbit"))

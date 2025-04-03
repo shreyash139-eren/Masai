@@ -11,3 +11,5 @@ function mapStringToObject(str) {
   return result;
 }
 
+let n=121
+n=n.to
