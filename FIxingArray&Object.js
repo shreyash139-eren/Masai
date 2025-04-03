@@ -11,17 +11,19 @@ const library = {
     return;
     
     }
-    else if(library.books.title===book.title){
-        cconsole.log("Book already in library.")
-    }
     
+    const exist=this.books.find(book1=>book1.title===book.title);
+    if (exist) {
+      console.log("Book already exists.");
+      return;
+    }
     this.books.push(book);
     
     },
     
     findBookByTitle(title) {
     
-    return this.books.find(book => book.title === title);
+    return this.books.find(book => book.title === title );
     
     },
     
@@ -39,6 +41,8 @@ const library = {
     
     } } };
     
-    library.addBook({ title: "The Hobbit", author: "J.R.R. Tolkien", year: 1937 });
+    library.addBook({ title: "The Walking Dead", author: "lolo lajpat", year: 2007 });
     
-    console.log( findBookByTitle("The Hobbit"))
+    console.log(library.books.length);
+    console.log(library.removeBook("The Walking Dead"))
+    console.log(library.books.length);
